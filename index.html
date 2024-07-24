@@ -942,7 +942,7 @@
             }
         }, { passive: false });
 
-        canvas.addEventListener('contextmenu', function (e) {
+        document.addEventListener('contextmenu', function (e) {
             originalPoints.push((e.pageX + viewport.x.from) / viewportScale);
             originalPoints.push((e.pageY + viewport.y.from) / viewportScale);
             points = [...originalPoints];
